@@ -1,5 +1,7 @@
-echo "\033[94mWelcome to \033[1mEasyLEMP\033[0m\033[94m!\033[0m"
-sleep 3
+echo "\033[94mWelcome to \033[1mEasyLEMP\033[0m\033[94m!"
+echo "\033[94mThis simple install script was created by Thomas Nappo."
+echo "\033[94mYou can find me on GitHub: https://github.com/Jire\033[0m"
+sleep 4.25
 echo "\033[94mEasyLEMP:\033[0m Updating apt-get...\033[0m"
 sleep 1.5
 sudo apt-get update
