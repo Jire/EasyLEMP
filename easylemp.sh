@@ -41,7 +41,7 @@ sudo service php5-fpm restart
 echo "\033[94mEasyLEMP:\033[0m Configuring nginx defaults...\033[0m"
 sleep 1.5
 sudo rm -f /etc/nginx/sites-available/default
-sudo wget https://raw.githubusercontent.com/Jire/EasyLEMP/master/defaults/default -O /etc/php5/fpm/default
+sudo wget https://raw.githubusercontent.com/Jire/EasyLEMP/master/defaults/default -O /etc/nginx/sites-available/default
 echo "\033[94mEasyLEMP:\033[0m Adding default index and php.info page...\033[0m"
 sudo rm -f /usr/share/nginx/html/index.html
 sudo wget https://raw.githubusercontent.com/Jire/EasyLEMP/master/defaults/index.html -O /usr/share/nginx/html/index.html
