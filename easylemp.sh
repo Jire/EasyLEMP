@@ -1,4 +1,5 @@
-read -p -e "\033[34mWelcome to \033[1mEasyLEMP\033[0m\033[34m! Press \033[1m[Enter]\033[0me[34m when you're ready to begin.\033[0m"
+echo -e "\033[34mWelcome to \033[1mEasyLEMP\033[0m\033[34m!\033[0m"
+sleep 3
 echo -e "\033[34mEasyLEMP:\033[0m Updating apt-get...\033[0m"
 sudo apt-get update
 echo -e "\033[34mEasyLEMP:\033[0m Installing nginx...\033[0m"
