@@ -1,24 +1,24 @@
-read -p -e "\e[34mWelcome to \e[1mEasyLEMP\e[0m\e[34m! Press \e[1m[Enter]\e[0me[34m when you're ready to begin.\e[0m"
-echo -e "\e[34mEasyLEMP:\e[0m Updating apt-get...\e[0m"
+read -p -e "\033[34mWelcome to \033[1mEasyLEMP\033[0m\033[34m! Press \033[1m[Enter]\033[0me[34m when you're ready to begin.\033[0m"
+echo -e "\033[34mEasyLEMP:\033[0m Updating apt-get...\033[0m"
 sudo apt-get update
-echo -e "\e[34mEasyLEMP:\e[0m Installing nginx...\e[0m"
+echo -e "\033[34mEasyLEMP:\033[0m Installing nginx...\033[0m"
 sudo apt-get install nginx
-echo -e "\e[34mEasyLEMP:\e[0m Installing mysql-server...\e[0m"
+echo -e "\033[34mEasyLEMP:\033[0m Installing mysql-server...\033[0m"
 sudo apt-get install mysql-server
-echo -e "\e[34mEasyLEMP:\e[0m Installing mysql db...\e[0m"
+echo -e "\033[34mEasyLEMP:\033[0m Installing mysql db...\033[0m"
 sudo mysql_install_db
-echo -e "\e[34mEasyLEMP:\e[0m Securing mysql installation...\e[0m"
+echo -e "\033[34mEasyLEMP:\033[0m Securing mysql installation...\033[0m"
 sudo mysql_secure_installation
-echo -e "\e[34mEasyLEMP:\e[0m Installing php5-fpm...\e[0m"
+echo -e "\033[34mEasyLEMP:\033[0m Installing php5-fpm...\033[0m"
 sudo apt-get install php5-fpm
-echo -e "\e[34mEasyLEMP:\e[0m Installing php5-mysql...\e[0m"
+echo -e "\033[34mEasyLEMP:\033[0m Installing php5-mysql...\033[0m"
 sudo apt-get install php5-mysql
-read -p "\e[34mEasyLEMP:\e[0m Press \e[1m[Enter]\e[0m to configure php.ini\e[0m"
+read -p "\033[34mEasyLEMP:\033[0m Press \033[1m[Enter]\033[0m to configure php.ini\033[0m"
 sudo nano /etc/php5/fpm/php.ini
-echo -e "\e[34mEasyLEMP:\e[0m Restarting php5-fpm...\e[0m"
+echo -e "\033[34mEasyLEMP:\033[0m Restarting php5-fpm...\033[0m"
 sudo service php5-fpm restart
-read -p "\e[34mEasyLEMP:\e[0m Press \e[1m[Enter]\e[0m to configure nginx\e[0m"
+read -p "\033[34mEasyLEMP:\033[0m Press \033[1m[Enter]\033[0m to configure nginx\033[0m"
 sudo nano /etc/nginx/sites-available/default
-echo -e "\e[34mEasyLEMP:\e[0m Restarting nginx...\e[0m"
+echo -e "\033[34mEasyLEMP:\033[0m Restarting nginx...\033[0m"
 sudo service nginx restart
-read -p "\e[34mEasyLEMP:\e[0m Done. Press \e[1m[Enter]\e[0m to finish.\e[0m"
+read -p "\033[34mEasyLEMP:\033[0m Done. Press \033[1m[Enter]\033[0m to finish.\033[0m"
