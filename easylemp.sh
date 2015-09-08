@@ -31,17 +31,19 @@ echo "\033[94mEasyLEMP:\033[0m Installing php5-mysql...\033[0m"
 sleep 1.5
 sudo apt-get install php5-mysql
 echo ""
-read -p "\033[94mEasyLEMP:\033[0m Press \033[1m[Enter]\033[0m to configure php.ini\033[0m"
+echo "\033[94mEasyLEMP:\033[0m Configuring php5-fpm defaults...\033[0m"
 sleep 1.5
-sudo nano /etc/php5/fpm/php.ini
+sudo rm -f /etc/php5/fpm/php.ini
+sudo wget https://raw.githubusercontent.com/Jire/EasyLEMP/master/defaults/php.ini -O /etc/php5/fpm/php.ini
 echo ""
 echo "\033[94mEasyLEMP:\033[0m Restarting php5-fpm...\033[0m"
 sleep 1.5
 sudo service php5-fpm restart
 echo ""
-read -p "\033[94mEasyLEMP:\033[0m Press \033[1m[Enter]\033[0m to configure nginx\033[0m"
+echo "\033[94mEasyLEMP:\033[0m Configuring nginx defaults...\033[0m"
 sleep 1.5
-sudo nano /etc/nginx/sites-available/default
+sudo rm -f /etc/nginx/sites-available/default
+sudo wget https://raw.githubusercontent.com/Jire/EasyLEMP/master/defaults/default -O /etc/php5/fpm/default
 echo ""
 echo "\033[94mEasyLEMP:\033[0m Restarting nginx...\033[0m"
 sleep 1.5
