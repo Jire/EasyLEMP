@@ -59,6 +59,6 @@ sudo service nginx restart
 sudo service mysql restart
 echo ""
 echo "\033[94mEasyLEMP:\033[0m We're all done!"
-echo "\033[94mEasyLEMP:\033[0m your web files can be put in /usr/share/nginx/html"
+echo "\033[94mEasyLEMP:\033[0m Your web files can be put in /usr/share/nginx/html"
 echo "\033[94mEasyLEMP:\033[0m We've set a default index page for you and an info.php page."
 echo "\033[94mEasyLEMP:\033[0m I hope you enjoyed using \033[94mEasyLEMP\033[0m!"
