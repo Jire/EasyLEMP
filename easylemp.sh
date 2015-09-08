@@ -53,8 +53,10 @@ echo "\033[94mEasyLEMP:\033[0m Installing phpMyAdmin...\033[0m"
 sudo apt-get -y install phpmyadmin
 sudo ln -s /usr/share/phpmyadmin /usr/share/nginx/html
 sudo php5enmod mcrypt
-echo "\033[94mEasyLEMP:\033[0m Restarting php5-fpm...\033[0m"
+echo "\033[94mEasyLEMP:\033[0m Restarting LEMP stack...\033[0m"
 sudo service php5-fpm restart
+sudo service nginx restart
+sudo service mysql restart
 echo ""
 echo "\033[94mEasyLEMP:\033[0m We're all done!"
 echo "\033[94mEasyLEMP:\033[0m your web files can be put in /usr/share/nginx/html"
